@@ -14,4 +14,11 @@
         android:layout_margin="30dp"
         android:layout_gravity="center_horizontal"
         android:text="Floating Button" />
+    <Button
+        android:id="@+id/btn_drawer"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:layout_gravity="center_horizontal"
+        android:text="Drawer Navigation" />
 </LinearLayout>
