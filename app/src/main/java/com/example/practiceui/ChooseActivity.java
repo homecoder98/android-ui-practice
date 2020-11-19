@@ -1,17 +1,21 @@
 package com.example.practiceui;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.DialogFragment;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.FrameLayout;
+import android.widget.Toast;
 
+import com.example.practiceui.dialog.MyDialogFragment;
 import com.example.practiceui.drawermenu.DrawerActivity;
 import com.example.practiceui.floating.FloatingActivity;
 
 public class ChooseActivity extends AppCompatActivity implements View.OnClickListener{
-    Button btn_floating,btn_drawer;
+    Button btn_floating,btn_drawer,btn_dialog_fragment;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,9 +26,11 @@ public class ChooseActivity extends AppCompatActivity implements View.OnClickLis
     public void Init(){
         btn_floating = (Button)findViewById(R.id.btn_floating);
         btn_drawer = (Button)findViewById(R.id.btn_drawer);
+        btn_dialog_fragment = (Button)findViewById(R.id.btn_dialog_fragment);
 
         btn_floating.setOnClickListener(this);
         btn_drawer.setOnClickListener(this);
+        btn_dialog_fragment.setOnClickListener(this);
     }
 
     @Override
@@ -37,6 +43,12 @@ public class ChooseActivity extends AppCompatActivity implements View.OnClickLis
             case R.id.btn_drawer:
                 Intent drawer_intent = new Intent(ChooseActivity.this, DrawerActivity.class);
                 startActivity(drawer_intent);
+                break;
+            case R.id.btn_dialog_fragment:
+                MyDialogFragment m = new MyDialogFragment();
+                m.show(getSupportFragmentManager(),null);
+                break;
+            default:
                 break;
         }
     }

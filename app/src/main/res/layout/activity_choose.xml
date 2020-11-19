@@ -21,4 +21,11 @@
         android:layout_margin="30dp"
         android:layout_gravity="center_horizontal"
         android:text="Drawer Navigation" />
+    <Button
+        android:id="@+id/btn_dialog_fragment"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:layout_gravity="center_horizontal"
+        android:text="Dialog Fragment" />
 </LinearLayout>
