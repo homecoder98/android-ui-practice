@@ -21,7 +21,6 @@ public class MyDialogFragment extends DialogFragment{
     public Dialog onCreateDialog(@Nullable Bundle savedInstanceState) {
         AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
         builder.setView(R.layout.acitivity_dialog_fragment);
-        builder.setTitle("test");
         return builder.create();
     }
 
