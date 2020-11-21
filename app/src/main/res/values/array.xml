@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="item">
+        <item name="하나" type="string">하나</item>
+        <item name="둘" type="string">둘</item>
+        <item name="셋" type="string">셋</item>
+    </array>
+
+</resources>
