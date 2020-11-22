@@ -37,10 +37,16 @@ public class MyDialogFragment extends DialogFragment{
                 Toast.makeText(getContext(),"취소 누름",Toast.LENGTH_SHORT).show();
             }
         });
-        builder.setMultiChoiceItems(R.array.item, null, new DialogInterface.OnMultiChoiceClickListener() {
+//        builder.setMultiChoiceItems(R.array.item, null, new DialogInterface.OnMultiChoiceClickListener() {
+//            @Override
+//            public void onClick(DialogInterface dialogInterface, int i, boolean b) {
+//                Toast.makeText(getContext(),i+" 누름",Toast.LENGTH_SHORT).show();
+//            }
+//        });
+        builder.setItems(R.array.item, new DialogInterface.OnClickListener() {
             @Override
-            public void onClick(DialogInterface dialogInterface, int i, boolean b) {
-                Toast.makeText(getContext(),i+" 누름",Toast.LENGTH_SHORT).show();
+            public void onClick(DialogInterface dialogInterface, int i) {
+                Toast.makeText(getContext(),++i+" 누름",Toast.LENGTH_SHORT).show();
             }
         });
         builder.setIcon(R.drawable.img_menu);
