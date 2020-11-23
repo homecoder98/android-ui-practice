@@ -35,4 +35,11 @@
         android:layout_margin="30dp"
         android:layout_gravity="center_horizontal"
         android:text="Bottom Bavigation" />
+    <Button
+        android:id="@+id/btn_viewpager2"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:layout_gravity="center_horizontal"
+        android:text="ViewPager2" />
 </LinearLayout>

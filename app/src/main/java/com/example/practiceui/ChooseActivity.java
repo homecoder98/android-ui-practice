@@ -14,9 +14,11 @@ import com.example.practiceui.bottomNavigation.BottomNavigation;
 import com.example.practiceui.dialog.MyDialogFragment;
 import com.example.practiceui.drawermenu.DrawerActivity;
 import com.example.practiceui.floating.FloatingActivity;
+import com.example.practiceui.pager.PagerActivity;
 
 public class ChooseActivity extends AppCompatActivity implements View.OnClickListener{
-    Button btn_floating,btn_drawer,btn_dialog_fragment,btn_bottom_navigation;
+    Button btn_floating,btn_drawer,btn_dialog_fragment,btn_bottom_navigation
+            ,btn_viewpager2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,11 +31,13 @@ public class ChooseActivity extends AppCompatActivity implements View.OnClickLis
         btn_drawer = (Button)findViewById(R.id.btn_drawer);
         btn_dialog_fragment = (Button)findViewById(R.id.btn_dialog_fragment);
         btn_bottom_navigation = (Button)findViewById(R.id.btn_bottom_navigation);
+        btn_viewpager2 = (Button)findViewById(R.id.btn_viewpager2);
 
         btn_floating.setOnClickListener(this);
         btn_drawer.setOnClickListener(this);
         btn_dialog_fragment.setOnClickListener(this);
         btn_bottom_navigation.setOnClickListener(this);
+        btn_viewpager2.setOnClickListener(this);
     }
 
     @Override
@@ -54,6 +58,10 @@ public class ChooseActivity extends AppCompatActivity implements View.OnClickLis
             case R.id.btn_bottom_navigation:
                 Intent bottom_navigation_intent = new Intent(ChooseActivity.this, BottomNavigation.class);
                 startActivity(bottom_navigation_intent);
+                break;
+            case R.id.btn_viewpager2:
+                Intent viewpager2_intent = new Intent(ChooseActivity.this, PagerActivity.class);
+                startActivity(viewpager2_intent);
                 break;
             default:
                 break;
