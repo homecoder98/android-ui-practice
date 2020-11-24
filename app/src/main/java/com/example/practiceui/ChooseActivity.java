@@ -1,16 +1,14 @@
 package com.example.practiceui;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.DialogFragment;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.FrameLayout;
-import android.widget.Toast;
 
 import com.example.practiceui.bottomNavigation.BottomNavigation;
+import com.example.practiceui.cardview.CardMenuActivity;
 import com.example.practiceui.dialog.MyDialogFragment;
 import com.example.practiceui.drawermenu.DrawerActivity;
 import com.example.practiceui.floating.FloatingActivity;
@@ -18,7 +16,7 @@ import com.example.practiceui.pager.PagerActivity;
 
 public class ChooseActivity extends AppCompatActivity implements View.OnClickListener{
     Button btn_floating,btn_drawer,btn_dialog_fragment,btn_bottom_navigation
-            ,btn_viewpager2;
+            ,btn_viewpager2,btn_card_view;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,12 +30,14 @@ public class ChooseActivity extends AppCompatActivity implements View.OnClickLis
         btn_dialog_fragment = (Button)findViewById(R.id.btn_dialog_fragment);
         btn_bottom_navigation = (Button)findViewById(R.id.btn_bottom_navigation);
         btn_viewpager2 = (Button)findViewById(R.id.btn_viewpager2);
+        btn_card_view = (Button)findViewById(R.id.btn_card_view);
 
         btn_floating.setOnClickListener(this);
         btn_drawer.setOnClickListener(this);
         btn_dialog_fragment.setOnClickListener(this);
         btn_bottom_navigation.setOnClickListener(this);
         btn_viewpager2.setOnClickListener(this);
+        btn_card_view.setOnClickListener(this);
     }
 
     @Override
@@ -62,6 +62,10 @@ public class ChooseActivity extends AppCompatActivity implements View.OnClickLis
             case R.id.btn_viewpager2:
                 Intent viewpager2_intent = new Intent(ChooseActivity.this, PagerActivity.class);
                 startActivity(viewpager2_intent);
+                break;
+            case R.id.btn_card_view:
+                Intent card_view_intent = new Intent(ChooseActivity.this, CardMenuActivity.class);
+                startActivity(card_view_intent);
                 break;
             default:
                 break;

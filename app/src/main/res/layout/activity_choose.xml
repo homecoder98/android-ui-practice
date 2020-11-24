@@ -11,35 +11,42 @@
         android:id="@+id/btn_floating"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_margin="30dp"
+        android:layout_margin="10dp"
         android:layout_gravity="center_horizontal"
         android:text="Floating Button" />
     <Button
         android:id="@+id/btn_drawer"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_margin="30dp"
+        android:layout_margin="10dp"
         android:layout_gravity="center_horizontal"
         android:text="Drawer Navigation" />
     <Button
         android:id="@+id/btn_dialog_fragment"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_margin="30dp"
+        android:layout_margin="10dp"
         android:layout_gravity="center_horizontal"
         android:text="Dialog Fragment" />
     <Button
         android:id="@+id/btn_bottom_navigation"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_margin="30dp"
+        android:layout_margin="10dp"
         android:layout_gravity="center_horizontal"
         android:text="Bottom Bavigation" />
     <Button
         android:id="@+id/btn_viewpager2"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_margin="30dp"
+        android:layout_margin="10dp"
         android:layout_gravity="center_horizontal"
         android:text="ViewPager2" />
+    <Button
+        android:id="@+id/btn_card_view"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_gravity="center_horizontal"
+        android:text="CardView" />
 </LinearLayout>
