@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.PracticeUi">
-        <activity android:name=".cardview.CardMenuActivity"></activity>
+        <activity android:name=".ImageEventActivity"></activity>
+        <activity android:name=".cardview.CardMenuActivity" />
         <activity android:name=".pager.PagerActivity" />
         <activity android:name=".bottomNavigation.BottomNavigation" />
         <activity android:name=".drawermenu.DrawerActivity" />

@@ -49,4 +49,11 @@
         android:layout_margin="10dp"
         android:layout_gravity="center_horizontal"
         android:text="CardView" />
+    <Button
+        android:id="@+id/btn_img_event"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_gravity="center_horizontal"
+        android:text="Image Event" />
 </LinearLayout>
