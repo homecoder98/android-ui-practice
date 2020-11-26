@@ -35,8 +35,16 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
         android:textSize="20sp"
         android:textStyle="bold"
         android:textColor="#000"
         android:text="핀치줌 기능 지원" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:text="최대 5배 확대 가능" />
 </LinearLayout>
