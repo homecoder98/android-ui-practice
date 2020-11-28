@@ -12,15 +12,14 @@
         android:layout_width="match_parent"
         android:layout_height="500dp">
 
-        <ImageView
-            android:id="@+id/iv_event"
+        <com.davemorrissey.labs.subscaleview.SubsamplingScaleImageView
+            android:id="@+id/imageView"
             android:layout_width="0dp"
             android:layout_height="0dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/img_screen" />
+            app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <TextView
@@ -30,7 +29,7 @@
         android:textSize="20sp"
         android:textStyle="bold"
         android:textColor="#000"
-        android:text="더블클릭시 2베 확대" />
+        android:text="더블클릭시 확대 또는 축소" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -40,14 +39,6 @@
         android:textStyle="bold"
         android:textColor="#000"
         android:text="핀치줌 기능 지원" />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        android:textColor="#000"
-        android:text="최대 5배 확대 가능" />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
